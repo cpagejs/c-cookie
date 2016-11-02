@@ -1,6 +1,6 @@
 {
   "name": "c-cookie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "c-cookie js cookie--Convenient operation cookie",
   "main": "index.js",
   "repository": {

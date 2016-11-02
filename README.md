@@ -1,7 +1,7 @@
 ﻿#c-cookie  js cookie--Convenient operation cookie
 
 # Installation
-
+### npm install --save-dev c-cookie
 ### import * from 'c-cookie';
 
 #API

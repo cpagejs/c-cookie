@@ -5,6 +5,10 @@
 	<title>c-cookie</title>
 </head>
 <body>
-	<script src="./dist/bundle.js"></script>
+	<script src="../dist/bundle.js"></script>
+	<script type="text/javascript">
+		Cookies.insert('user','add user');
+		console.log(Cookies.query());
+	</script>
 </body>
 </html>

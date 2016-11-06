@@ -1,6 +1,8 @@
-##how to use
+##use script
 ```
-npm install
-npm run build
-npm run start
+<script src="../dist/bundle.js"></script>
+<script type="text/javascript">
+	Cookies.insert('user','add user');
+	console.log(Cookies.query());
+</script>
 ```

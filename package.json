@@ -1,20 +1,22 @@
 {
   "name": "c-cookie",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "c-cookie js cookie--Convenient operation cookie",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/chenhaozhi/c-cookie.git"
   },
   "keywords": [
     "js",
+    "javascript",
     "cookie",
+    "cookies",
     "c-cookie"
   ],
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --host 0.0.0.0 --port 1024 --history-api-fallback",
-    "build": "webpack -p --progress --profile --colors --display-error-details --display-cached"
+    "start": "webpack-dev-server --inline --hot --host 0.0.0.0 --port 3000 --history-api-fallback",
+    "build": "webpack --progress --profile --colors --display-error-details --display-cached"
   },
   "author": "chenhaotian",
   "license": "ISC",

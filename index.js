@@ -1,4 +1,4 @@
-module.exports = {
+export const Cookies = {
 	insert(name,value,hours,path,domain,secure){
 		let len = arguments.length;
 		var data = name + "=" + value;

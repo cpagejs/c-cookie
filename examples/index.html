@@ -8,6 +8,9 @@
 	<script src="../dist/bundle.js"></script>
 	<script type="text/javascript">
 		Cookies.insert('user','add user');
+		Cookies.insert('app','add app');
+		console.log(Cookies.query());
+		Cookies.remove('user');
 		console.log(Cookies.query());
 	</script>
 </body>

@@ -44,6 +44,6 @@ export const Cookies = {
 			}
 		}
 
-		insert(name,"",-1,path,domain);
+		this.insert(name,"",-1,path,domain);
 	}
 }

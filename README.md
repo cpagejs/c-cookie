@@ -16,7 +16,7 @@ import { Cookies } from 'c-cookie';
 ```
 
 #API
-add cokkie
+add cokkie   
 param: name,value,{hours,path,domain,secure}
 ```
 Cookies.insert('name','zhang',{"hours":3,"path":"/"});
@@ -24,9 +24,9 @@ Cookies.insert('li','yue');
 Cookies.insert('li','yue2',{"hours":5});
 ```
 
-search cookie
-Cookies.query()--return all cookies 
-Cookies.query('xxx')--return one cookie
+search cookie   
+Cookies.query()--return all cookies    
+Cookies.query('xxx')--return one cookie   
 ```
 var q = Cookies.query();
 console.log(q);  //[["name","zhang"],["li","yue2"]]

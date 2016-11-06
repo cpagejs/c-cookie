@@ -7,11 +7,11 @@
 <body>
 	<script src="../dist/bundle.js"></script>
 	<script type="text/javascript">
-		Cookies.insert('user','add user');
-		Cookies.insert('app','add app');
+		Cookies.insert('user','add user',{'hours':3});
+		Cookies.insert('app','add app',{'hours':3});
 		console.log(Cookies.query());
 		Cookies.remove('user');
-		console.log(Cookies.query());
+		console.log(Cookies.query('app'));
 	</script>
 </body>
 </html>

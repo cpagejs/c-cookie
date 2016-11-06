@@ -1,5 +1,5 @@
 export const Cookies = {
-	insert(name,value,hours,path,domain,secure){
+	insert(name,value,{hours,path,domain,secure}){
 		let len = arguments.length;
 		var data = name + "=" + value;
 
@@ -38,12 +38,12 @@ export const Cookies = {
 
 	remove(name,path,domain){
 		if(arguments.length == 0){
-			var all = query();
+			var all = this.query();
 			for(var i=0; i<all.length; i++){
-				insert(all[i][0],"",-1);
+				this.insert(all[i][0],"",-1);
 			}
 		}
 
-		this.insert(name,"",-1,path,domain);
+		this.insert(name,"",{"hours":-1});
 	}
 }

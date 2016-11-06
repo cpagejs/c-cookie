@@ -1,6 +1,6 @@
 {
   "name": "c-cookie",
-  "version": "1.0.21",
+  "version": "1.0.3",
   "description": "c-cookie js cookie--Convenient operation cookie",
   "main": "dist/bundle.js",
   "repository": {

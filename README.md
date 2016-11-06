@@ -35,9 +35,9 @@ var q1 = Cookies.query("name");
 console.log(q1);   //zhang
 ```
 
-delete cookie
-Cookies.remove("name")--delete one cookie 
-Cookies.remove()--delete all cookies
+delete cookie    
+Cookies.remove("name")--delete one cookie      
+Cookies.remove()--delete all cookies    
 ```
 Cookies.remove("name");
 var q = Cookies.query();

@@ -1,7 +1,7 @@
 export const Cookies = {
 	insert(name,value,{hours,path,domain,secure}){
-		let len = arguments.length;
-		var data = name + "=" + value;
+		// let len = arguments.length;
+		var data = name + "=" + encodeURIComponent(value);
 
 	  	if(hours){
 	  		var d = new Date();
@@ -26,13 +26,13 @@ export const Cookies = {
 			// console.log(arr);
 			for(var i=0; i<arr.length; i++){
 				var a = arr[i].split('=');
-				var a1 = [a[0].trim(),a[1]];
+				var a1 = [a[0].trim(), decodeURIComponent(a[1])];
 				arr2.push(a1);
 			}
 			return JSON.stringify(arr2);
 		}else if(len == 1){
 			var reg = eval("/(?:^|;\\s*)" + name + "=([^=]+)(?:;|$)/"); 
-	      	return reg.test(document.cookie) ? RegExp.$1 : "";
+	      	return reg.test(document.cookie) ? decodeURIComponent(RegExp.$1) : "";
 		}
 	},
 
